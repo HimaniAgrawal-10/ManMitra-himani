@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ManMitra Lite</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>💙 ManMitra Lite</h2>
+      <nav>
+        <ul>
+          <li onclick="navigate('home')">🏠 Home</li>
+          <li onclick="navigate('chat')">💬 Chatbot</li>
+          <li onclick="navigate('screening')">📝 Screening</li>
+          <li onclick="navigate('booking')">📅 Booking</li>
+          <li onclick="navigate('resources')">📚 Resources</li>
+          <li onclick="navigate('forum')">👥 Forum</li>
+          <li onclick="navigate('mood')">😊 Mood Scan</li>
+          <li onclick="navigate('admin')">⚙️ Admin</li>
+          <li onclick="logout()">🚪 Logout</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div id="content"></div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

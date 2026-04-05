@@ -1,0 +1,132 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+}
+
+/* Auth pages */
+.auth-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.auth-box {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+}
+.auth-box input {
+  width: 90%;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+.auth-box button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.auth-box a { color: #60a5fa; }
+
+/* Layout */
+.app {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 220px;
+  background: #111827;
+  padding: 20px;
+}
+.sidebar h2 {
+  color: #60a5fa;
+}
+.sidebar li {
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sidebar li:hover {
+  background: #1f2937;
+}
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Dashboard cards */
+.dashboard-grid {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.card:hover { transform: translateY(-4px); }
+.card button {
+  margin: 6px 0;
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+/* Chat */
+.chat-box {
+  background: #111827;
+  padding: 12px;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.message { margin: 6px 0; }
+.user { color: #60a5fa; }
+.bot { color: #facc15; }
+
+/* Forms */
+textarea, input, select {
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+button:hover { opacity: 0.9; }
+.video-container {
+  display: flex;
+  flex-wrap: wrap;      /* Wrap videos on small screens */
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.video-container iframe {
+  flex: 1 1 300px;      /* Make iframes responsive */
+  max-width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
